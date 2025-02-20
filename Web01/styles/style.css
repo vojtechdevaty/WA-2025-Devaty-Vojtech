@@ -1,77 +1,65 @@
-/*  
-Syntaxe css
-
+/*
+Syntaxe CSS
 
 selector {
-vlastnost1= hodnota;
-vlastnost2 = hodnota;
-
-
+    vlastnost-1: hodnota;
+    vlastnost-2: hodnota;
+    vlastnost-3: hodnota;
+    vlastnost-4: hodnota;
+    ...
+    vlastnost-n: hodnota;
 }
-
 
 */
 
-
-
 body {
-background-color:#8ACE00;
-
-
-
+    background-color: rgb(224, 110, 110);
 }
-
 
 h1 {
-    color: #8ACE00;
-    font-size: xx-large;
-    font-family: Arial, Helvetica, sans-serif;
+   color: 333;
+   font-size: 30px;
+   font-family: Tahoma, Helvetica, sans-serif; 
 }
-
 
 .page-wrapper {
-     /*max-width: 10%; */
-     width: 80%;
-    margin: auto; /* zarovaní na střed  */
-    background-color: rgb(226, 43, 43);
-    padding: 20px; /* odsazení  */ 
-    border-radius: 2%;
-}
-
-nav a {
-
-    color: rgb(226, 43, 43);
-    background-color:#8ACE00;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    
+    /* max-width: 80%; */
+    width:  80%;
+    margin: 0 auto; /* Zarovnání na střed */
+    background-color: lightyellow;
+    padding: 20px;
 }
 
 nav ul {
-display: flex;
-list-style: none;
-gap: 15px;
-
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
 }
 
+nav a {
+    background-color: #df4803;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
 
-nav a:hover{
-background-color: rgb(0, 0, 0);
+nav a:hover {
+    background-color: black;
+}
 
+.grid-container {
+    display: grid;
+    /* grid-template-columns: auto auto; */
+    /* grid-template-columns: 4fr 3fr; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    gap: 15px;
 }
 
 .card {
-background-color: blueviolet;
-color: #8ACE00;
-border-radius: 10px;
-padding: 20px;
-
-}
-
-.grid{
-display: grid;
-/* grid-template-columns: auto; */
-grid-template-columns: repeat(auto-fill, minmax(250px));
-
-
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
 }

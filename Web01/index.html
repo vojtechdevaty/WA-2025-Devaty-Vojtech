@@ -3,73 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devátý Vojtěch</title>
+    <title>Vojtěch Devátý</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
- <div class="page-wrapper" >
-                <header>
-                    <h1> WA - web </h1>
-                </header>
-                <nav>
-                    <ul>
-                    <li> <a href="#">domu</a></li>
-                    <li> <a href="#">O nás</a></li>  
-                    <li> <a href="#">Kontakt</a></li>      
-                    </ul>
-                </nav>
-
-                <main>
-                    <div class="page-content-wrapper" >
-            <section class="card">
-           
-                <article>
-                    <h2> První článek    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<a href="#">ODKaZ</a> Molestiae inventore corrupti labore, odit ea eaque atque obcaecati vel dignissimos sit, ab libero fugiat possimus laborum aliquid numquam. Excepturi, quaerat doloremque?</p>
-                
-                </article>
-                <article>
-                    <h2> druhy článek    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deserunt eveniet nihil ab ipsa minus enim neque sunt officia quos, vel unde quam debitis exercitationem commodi, quae qui quis mollitia.</p>
-                
-                </article>
-                <article>
-                    <h2> třetí článek    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officia voluptate, dolorem quisquam, esse quia error repellendus amet, aut autem excepturi? Aut magnam omnis veniam molestiae exercitationem corrupti facere ea.............</p>
-                
-                </article>
-                <article>
-                    <h2> čtvrtý článek    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos saepe quisquam beatae nulla! Non autem alias quod, aperiam numquam similique cumque enim hic, vel laboriosam ipsum et porro, quo sint?............</p>
-                
-                </article>
-                <article>
-                    <h2> pátý  článek    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos saepe quisquam beatae nulla! Non autem alias quod, aperiam numquam similique cumque enim hic, vel laboriosam ipsum et porro, quo sint?............</p>
-                
-                </article>
-
-                <article>
-                    <h2> šestý článek    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos saepe quisquam beatae nulla! Non autem alias quod, aperiam numquam similique cumque enim hic, vel laboriosam ipsum et porro, quo sint?............</p>
-                
-                </article>
-
-
-
-
-
-             </section>
-
-
-
-                </main>
-               </div>
-                <footer>
-
-                    <p>&copy; 2025 Devátý Vojtěch</p>
-
-                </footer>
+    <div class="page-wrapper">
+        <header>
+            <h1>WA - první web (záhlaví webu)</h1>
+        </header>
+        <nav>
+            <!-- Navigace pomocí odrážek -->
+            <ul>
+                <li><a href="#">Domů</a></li>
+                <li><a href="#">O nás</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="content-wrapper">
+                <h1>Články</h1>
+                <section class="grid-container">
+                    <article class="card">
+                        <h2>První článek</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">TEST ODKAZ</a> Similique, ab? Excepturi odit corporis, iure quod doloribus, rerum repellendus iusto quisquam laudantium id beatae magni accusantium iste, quae dolor dolorem tempora?</p>
+                    </article>
+                    <article class="card">
+                        <h2>Druhý článek</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum praesentium atque tempore suscipit distinctio mollitia iste excepturi soluta quas, exercitationem quidem at in est, facilis quasi. Nostrum dicta ut non!</p>
+                    </article>
+                    <article class="card">
+                        <h2>Třetí článek</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores ratione officia. Numquam ratione consequatur eaque rem quasi atque eius repellat! Veniam odio aut ipsa eum, facilis ipsam ut laborum.</p>
+                    </article>
+                    <article class="card">
+                        <h2>Čtvrtý článek</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, enim? Quibusdam, non. Sequi pariatur, consequuntur laboriosam laudantium culpa tempore, vitae amet beatae qui corrupti repellat a eius hic maiores modi.</p>
+                    </article>
+                    <article class="card">
+                        <h2>Pátý článek</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, enim? Quibusdam, non. Sequi pariatur, consequuntur laboriosam laudantium culpa tempore, vitae amet beatae qui corrupti repellat a eius hic maiores modi.</p>
+                    </article>
+                    <article class="card">
+                        <h2>Šestý článek</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, enim? Quibusdam, non. Sequi pariatur, consequuntur laboriosam laudantium culpa tempore, vitae amet beatae qui corrupti repellat a eius hic maiores modi.</p>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Vojtěch Devátý (zápatí webu)</p>
+            <input type="color" id="colorPicker" value="#df4803">
+        </footer>
     </div>
+ <h1>Mění se i barva nadpisu</h1>
+ <p>mění se i barva odstavce</p>
+
+    <script>
+        const colorPicker = document.getElementById('colorPicker');
+        const body = document.body;
+        const textElements = document.querySelectorAll('h1, p');
+
+
+        colorPicker.addEventListener('input', () => {
+            const color = colorPicker.value;
+            body.style.background = color;
+           
+            // Převod hex na RGB
+            const r = parseInt(color.substr(1, 2), 16);
+            const g = parseInt(color.substr(3, 2), 16);
+            const b = parseInt(color.substr(5, 2), 16);
+           
+            // Výpočet světlosti (luminance) podle vnímání oka
+            const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+           
+            // Pokud je světlost vysoká, nastavíme černý text, jinak bílý
+            //const textColor = luminance > 0.5 ? 'black' : 'white';
+            //textElements.forEach(el => el.style.color = textColor);
+        });
+    </script>
 </body>
 </html>
