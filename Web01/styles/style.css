@@ -1,0 +1,77 @@
+/*  
+Syntaxe css
+
+
+selector {
+vlastnost1= hodnota;
+vlastnost2 = hodnota;
+
+
+}
+
+
+*/
+
+
+
+body {
+background-color:#8ACE00;
+
+
+
+}
+
+
+h1 {
+    color: #8ACE00;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.page-wrapper {
+     /*max-width: 10%; */
+     width: 80%;
+    margin: auto; /* zarovaní na střed  */
+    background-color: rgb(226, 43, 43);
+    padding: 20px; /* odsazení  */ 
+    border-radius: 2%;
+}
+
+nav a {
+
+    color: rgb(226, 43, 43);
+    background-color:#8ACE00;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+}
+
+nav ul {
+display: flex;
+list-style: none;
+gap: 15px;
+
+}
+
+
+nav a:hover{
+background-color: rgb(0, 0, 0);
+
+}
+
+.card {
+background-color: blueviolet;
+color: #8ACE00;
+border-radius: 10px;
+padding: 20px;
+
+}
+
+.grid{
+display: grid;
+/* grid-template-columns: auto; */
+grid-template-columns: repeat(auto-fill, minmax(250px));
+
+
+}
