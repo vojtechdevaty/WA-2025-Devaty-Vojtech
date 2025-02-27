@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+><html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vojtěch Devátý</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css" rel="stylesheet">  <!-- prism -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-okaidia.min.css" integrity="sha512-5HvW0a7ihK3ro2KhwEksDHXgIezsTeZybZDIn8d8Y015Ny+t7QWSIjnlCTjFzlK7Klb604HLGjsNqU/i5mJLjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>
+<!-- Navigace -->
+<nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+ <a class="navbar-brand" href="#">bootstrap Example page</a>
+   <div>
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link"   href="#buttons">Tlačítka</a></li> 
+        <li class="nav-item"><a class="nav-link" href="#cards">Karty</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tables">Tabulky</a></li>
+        <li class="nav-item"><a class="nav-link" href="#checks">Kontrola</a></li>
+        <li class="nav-item"><a class="nav-link" href="#select">Výběr</a></li>
+        
+    </ul>
+    </div>
+</div>  
+</nav>
+
+<header> <h1>Vítejte na mé stránce o toolkitu bootstrap  </h1> 
+    <p> budu zde prezentovat vybrané komponenty</p>
+    <a href="#buttons" class="btn btn-light btn-lg">Začít</a>
+
+</header>
+
+
+<!-- sekce : Tlačítko-->
+<section class="container mt-4" id="buttons">
+    <h2>Tlačítka</h2>
+<p> bootstrap umožňuje snadné stylování tlačítek pomocí tříd jako například např. <code>btn-primary</code></p>
+
+
+<!--ukázka tlačítek -->
+<div class="text-center">
+<button class="btn btn-primary"> Primární </button>
+<button class="btn btn-warning"> Warning button </button>
+</div>
+
+
+<!-- Kod tlačítek-->
+<pre>
+ <code class="language-html">
+    &lt;button class="btn btn-primary"&gt; Primární &lt; /button&gt;
+    &lt;button class="btn btn-warning"&gt; Warning button &lt;/button&gt;  
+ </code>   
+</pre>
+
+
+</section>
+
+<!-- sekce : Karty-->
+<section class="container mt-4" id="cards">
+<h2> Karty</h2>
+<p> Karta v Bootstrap je super způsob jak struktutovat obsah</p>
+
+
+<!--ukázka Karty -->
+<div class="card mx-auto">
+ <div class="card-body">
+  <h3 class="card-title"> ukázková Karta</h3>
+    <p class="card-text"> Toto je ukázka karty v Bootstrapu</p>
+    <a href="#" class="btn btn-info">Detail</a>
+ </div>
+</div>
+
+
+
+<!-- ukázka kodu karty-->
+<pre>
+<code class="language-html">
+    &lt;div class="card mx-auto"&gt;
+        &lt;div class="card-body"&gt;
+         &lt;h3 class="card-title"&gt; ukázková Karta&lt;/h3&gt;
+           &lt;p class="card-text"&gt; Toto je ukázka karty v Bootstrapu&lt;/p&gt;
+           &lt;a href="#" class="btn btn-info"&gt;Detail&lt;/a&gt;
+        &lt;/div&gt;
+       &lt;/div&gt;
+</code>
+</pre>
+
+
+
+
+
+
+</section>
+
+<!-- sekce : Tabulky-->
+<section class="container mt-4" id="tables">
+<h2>Tabulky</h2>
+<p>Tabulky lze v Bootstrapu stylovat pomocí tříd jako např. <code> table-striped</code></p>
+
+
+
+<!-- ukázka : Tabulky-->
+<table class="table table-striped  table-hover">
+    <thead class="table-dark">
+     <tr>
+        <th>#</th>
+        <th> Jméno</th>
+        <th> e-mail</th>
+     </tr>
+    </thead>
+<tbody>
+<tr>
+    <td>1</td>
+    <td> Jan novák</td>
+    <td> jannovak@e-mail.cz</td>
+</tr>
+
+<tr>
+    <td>2</td>
+    <td> Jana Nováková</td>
+    <td> jana.novakova@e-mail.cz</td>
+</tr>
+
+<tr>
+    <td>3</td>
+    <td> Petr novák</td>
+    <td> petr.ovak@e-mail.cz</td>
+</tr>
+
+
+</tbody>
+</table>
+<!-- ukázka kodu Tabulky-->
+<pre>
+<code class="language-html">
+    &lt;table class="table table-striped  table-hover"&gt;
+        &lt;thead class="table-dark"&gt;
+         &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt; Jméno&lt;/th&gt;
+            &lt;th&gt; e-mail&lt;/th&gt;
+         &lt;/tr&gt;
+        &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt; Jan novák&lt;/td&gt;
+        &lt;td&gt; jannovak@e-mail.cz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt; Jana Nováková&lt;/td&gt;
+        &lt;td&gt; jana.novakova@e-mail.cz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt; Petr novák&lt;/td&gt;
+        &lt;td&gt; petr.ovak@e-mail.cz&lt;/td&gt;
+    &lt;/tr&gt; 
+    &lt;/tbody&gt;
+    &lt;/table&gt;
+</code>
+</pre>
+</section>
+
+
+
+
+
+
+
+<!-- sekce : Kontrola-->
+<section class="container mt-4" id="checks">
+    <h2>Kontrola</h2>
+<p> Kontrola v Bootstrapu jde vytvářet jako zaškrtávaící políčka  pomocí  <code>form-check</code></p>
+
+
+<!--ukázka kontrola -->
+
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      Obyčejné políčko
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">
+      Zaškrtlé políčko
+    </label>
+  </div>
+
+  <div class="form-check mt-4">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      buď
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+    <label class="form-check-label" for="flexRadioDefault2">
+      nebo
+    </label>
+  </div>
+
+<!-- Kod kontrola-->
+<pre>
+ <code class="language-html">
+    &lt;div class="form-check"&gt;
+        &lt;input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"&gt;
+        &lt;label class="form-check-label" for="flexCheckDefault"&gt;
+          Obyčejné políčko
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked&gt;
+        &lt;label class="form-check-label" for="flexCheckChecked"&gt;
+          Zaškrtlé políčko
+        &lt;/label&gt;
+      &lt;/div&gt;
+
+
+      &lt;div class="form-check mt-4"&gt;
+        &lt;input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"&gt;
+        &lt;label class="form-check-label" for="flexRadioDefault1"&gt;
+          buď
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked&gt;
+        &lt;label class="form-check-label" for="flexRadioDefault2"&gt;
+          nebo
+        &lt;/label&gt;
+      &lt;/div&gt;
+
+
+ </code>   
+</pre>
+
+</section>
+
+<!-- sekce : Výběr-->
+<section class="container mt-4" id="select">
+    <h2>Výběr</h2>
+    <p>Výběr lze v Bootstrapu iniciovat pomocí <code> <select name="" id=""></select></code></p>
+
+    
+<!--ukázka výběr -->
+
+<select class="form-select" aria-label="Default select example">
+    <option selected>otevřít menu</option>
+    <option value="1">možnost jedna</option>
+    <option value="2">možnost dva</option>
+    <option value="3">možnost tři</option>
+  </select>
+
+
+
+
+
+
+
+
+
+<!-- Kod tlačítek-->
+<pre>
+    <code class="language-html">
+        &lt;select class="form-select" aria-label="Default select example"&gt;
+            &lt;option selected&gt;otevřít menu&lt;/option&gt;
+            &lt;option value="1"&gt;možnost jedna&lt;/option&gt;
+            &lt;option value="2"&gt;možnost dva&lt;/option&gt;
+            &lt;option value="3"&gt;možnost tři&lt;/option&gt;
+          &lt;/select&gt;
+    </code>   
+   </pre>
+   </section>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
